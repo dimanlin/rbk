@@ -1,0 +1,8 @@
+ru:
+  activerecord:
+    models:
+      indicator: Индикатор
+    attributes:
+      indicator:
+        fix_price: Фиксированный курс
+        fix_date: Дата окончания действия курса

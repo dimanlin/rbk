@@ -1,0 +1,9 @@
+h1 Фиксирование курса
+
+= simple_form_for([:admin, @indicator], wrapper: :vertical_input_group, wrapper_mappings: { check_boxes: :horizontal_radio_and_checkboxes,
+                                                                                              radio_buttons: :horizontal_radio_and_checkboxes,
+                                                                                              file: :horizontal_file_input,
+                                                                                              boolean: :horizontal_boolean }) do |f|
+  = f.input :fix_price
+  = f.input :fix_date, start_year: Date.current.year
+  = f.submit class: 'btn btn-sm btn-primary'

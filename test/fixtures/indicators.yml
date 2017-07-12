@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  subname: MyString
+  url: MyString
+  time: 
+  chg_abs: 9.99
+  chg_percent: 9.99
+  diff_high: 9.99
+  diff_low: 9.99
+  value1: 9.99
+  value2: 9.99
+
+two:
+  name: MyString
+  subname: MyString
+  url: MyString
+  time: 
+  chg_abs: 9.99
+  chg_percent: 9.99
+  diff_high: 9.99
+  diff_low: 9.99
+  value1: 9.99
+  value2: 9.99

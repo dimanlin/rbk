@@ -1,0 +1,20 @@
+h1
+  | Курсы валют
+  
+table.table.table-hover
+  thead
+    tr
+      th Тип
+      th Валюта
+      th Курс к рублю
+      th Последнее изменение
+      th Тип курса
+  tbody
+    - @indicators.each do |indicator|
+      tr
+        td= indicator.subname
+        td= indicator.name
+        td= indicator.price
+        td= indicator.chg_abs
+        td= indicator.fix_price? ? 'Временный курс' : 'Online обновление'
+        td= link_to 'Управлять временным курсом', edit_admin_indicator_path(indicator), class: 'btn btn-sm btn-primary'
